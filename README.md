@@ -234,6 +234,8 @@ Predicate Evaluation
 ---
 
 ## 12. Author
+```
 Venkata Revanth
 IIT Delhi
 COL362 / DB362
+```
