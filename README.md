@@ -190,45 +190,50 @@ mvn clean install -DskipTests
 ---
 
 ## 9. Run Tests
-
+```
 mvn test
-
+```
 Tests include:
-
+```
 ParserTest  
 CSVParserTest  
 QueryEvaluatorTest  
 CustomTests
-
+```
 ---
 
 ## 10. Example Usage
 
 Example CSV header:
-
+```
 salary:double,department:string
-
+```
 Example index configuration:
-
+```
 salary → BPlusTree  
 department → Bitmap
-
+```
 Query example:
-
+```
 salary > 50000  
 department = "HR"
-
+```
 The system selects the appropriate index automatically.
 
 ---
 
 ## 11. Concepts Demonstrated
-
+```
 Database Indexing  
 B+ Tree Structure  
 Extendible Hashing  
 Bitmap Indexing  
 Query Optimization  
 Predicate Evaluation
-
+```
 ---
+
+## 12. Author
+Venkata Revanth
+IIT Delhi
+COL362 / DB362
