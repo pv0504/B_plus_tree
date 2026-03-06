@@ -50,6 +50,8 @@ public class CSVParser {
 
         logger.info("Parsing CSV file");
 
+        catalog.clear();
+
         List<ColumnMeta> columns = new ArrayList<>();
         // Use ISO_LOCAL_DATE for date parsing.
         DateTimeFormatter dateFormatter = DateTimeFormatter.ISO_LOCAL_DATE;

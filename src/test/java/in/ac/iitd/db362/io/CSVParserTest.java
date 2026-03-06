@@ -26,7 +26,7 @@ class CSVParserTest {
 
     //TODO: remove @Disabled after your implementation to test your code
     @Test
-    @Disabled
+    // @Disabled
     void testValidCSVParsing() throws IOException {
         // Create a temporary CSV file.
         Path tempFile = Files.createTempFile("test", ".csv");
@@ -147,6 +147,8 @@ class CSVParserTest {
 
         // In this case, salary may not have been registered due to header parsing failure.
         List<?> salaryIndexes = catalog.getIndexes("salary");
+        // print salary indexes for debugging
+        System.out.println("Salary indexes: " + salaryIndexes);
         // We cannot guarantee registration so we check for null or empty.
         assertTrue(salaryIndexes == null || salaryIndexes.isEmpty());
         Files.deleteIfExists(tempFile);
