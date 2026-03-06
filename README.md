@@ -180,13 +180,13 @@ Maven 3.9+
 ---
 
 ## 8. Build
-
+```
 mvn clean install
-
+```
 Skip tests:
-
+```
 mvn clean install -DskipTests
-
+```
 ---
 
 ## 9. Run Tests
